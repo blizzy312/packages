@@ -23,7 +23,8 @@ void _registerFactory({bool debug = false}) {
   ui.platformViewRegistry.registerViewFactory(viewType, (int viewId) {
     final html.Element htmlElement = html.DivElement()
       ..style.width = '100%'
-      ..style.height = '100%';
+      ..style.height = '100%'
+      ..style.backgroundColor = 'rgba(255, 255, 255, .1)';
     if (debug) {
       htmlElement.style.backgroundColor = 'rgba(255, 0, 0, .5)';
     }
